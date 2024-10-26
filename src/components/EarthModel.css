@@ -1,0 +1,68 @@
+.welcome-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.box {
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out forwards;
+  position: relative; /* Ensures z-index works */
+  z-index: 10; /* Ensure the text is above other elements */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.font-Nebula3 {
+  font-family: "Nebula3", sans-serif; /* Ensure this font is properly loaded in your project */
+}
+
+.text-7xl {
+  font-size: 4rem; /* Adjust based on your design */
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.animate-fade-in-out {
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out forwards;
+}
